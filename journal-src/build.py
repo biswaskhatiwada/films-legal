@@ -107,6 +107,11 @@ def head(title, desc, slug):
 <meta property="og:image" content="{BASE}/blog/art/{slug}.svg"/>
 <meta property="og:url" content="{BASE}/blog/{slug}.html"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="{BASE}/blog/{slug}.html"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 {FONTS}
 <link rel="stylesheet" href="journal.css"/>
 </head><body>'''
@@ -178,6 +183,12 @@ def build_index():
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="{BASE}/blog/art/{feat['slug']}.svg"/>
 <meta property="og:url" content="{BASE}/blog/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="{BASE}/blog/"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 {FONTS}
 <link rel="stylesheet" href="journal.css"/>
 </head><body>'''
