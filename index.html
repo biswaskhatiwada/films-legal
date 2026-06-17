@@ -387,9 +387,9 @@
 </footer>
 
 <script>
-  // Waitlist — wire WAITLIST_URL to a real endpoint (Formspree / Convex) before launch.
-  // Until then, we confirm client-side and store nothing.
-  const WAITLIST_URL = "";
+  // Waitlist — posts to the Convex `/waitlist` HTTP endpoint (convex/http.ts) → waitlist table.
+
+  const WAITLIST_URL = "https://resilient-goat-339.convex.site/waitlist";
   document.querySelectorAll("form[data-wl]").forEach((form) => {
     const msg = form.parentElement.querySelector("[data-wl-msg]");
     form.addEventListener("submit", async (e) => {
