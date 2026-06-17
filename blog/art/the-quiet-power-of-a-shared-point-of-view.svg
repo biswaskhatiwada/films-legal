@@ -1,0 +1,31 @@
+<svg viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <radialGradient id="glow" cx="59.7%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#1B140C"/>
+      <stop offset="46%" stop-color="#0A0807"/>
+      <stop offset="100%" stop-color="#060504"/>
+    </radialGradient>
+    <radialGradient id="bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EBC169" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#EBC169" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#EBC169" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B98A4A" stop-opacity="0.30"/>
+      <stop offset="40%" stop-color="#0A0807" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#060504" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="vgrain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B98A4A" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#0A0807"/>
+      <stop offset="100%" stop-color="#060504"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="505" cy="315" r="150" fill="none" stroke="#EBC169" stroke-width="2.6" opacity="0.9"/><circle cx="695" cy="315" r="150" fill="none" stroke="#F4ECDD" stroke-width="2.2" opacity="0.6"/><circle cx="505" cy="315" r="150" fill="url(#bloom)" opacity="0.3"/><g transform="translate(578 293) scale(0.44)"><path d="M50 2 C53 30 70 47 98 50 C70 53 53 70 50 98 C47 70 30 53 2 50 C30 47 47 30 50 2 Z" fill="#EBC169"/></g>
+  <rect x="0" y="0" width="1200" height="630" filter="url(#grain)" opacity="0.05" style="mix-blend-mode:overlay"/>
+  <rect x="14" y="14" width="1172" height="602" rx="20" fill="none" stroke="rgba(245,232,210,0.10)" stroke-width="1"/>
+  <g transform="translate(1140 570) scale(0.30)" opacity="0.9"><path d="M50 2 C53 30 70 47 98 50 C70 53 53 70 50 98 C47 70 30 53 2 50 C30 47 47 30 50 2 Z" fill="#EBC169"/></g>
+</svg>

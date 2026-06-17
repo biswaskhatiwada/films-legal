@@ -148,6 +148,7 @@
       <a href="#reveal">Reveal</a>
       <a href="#recap">Recap</a>
       <a href="#faq">FAQ</a>
+      <a href="blog/index.html">Journal</a>
       <a class="btn" href="#waitlist">Join the waitlist</a>
     </div>
   </div>
@@ -312,6 +313,41 @@
   </div>
 </section>
 
+<!-- From the Journal -->
+<style>
+  .jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px;}
+  .jcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--hair);border-radius:20px;overflow:hidden;transition:transform .18s ease,border-color .18s ease;}
+  .jcard:hover{transform:translateY(-4px);border-color:rgba(230,180,80,.28);}
+  .jart{aspect-ratio:1200/630;overflow:hidden;border-bottom:1px solid var(--hair);background:#0A0807;}
+  .jart img{width:100%;height:100%;object-fit:cover;display:block;}
+  .jbody{padding:18px 18px 20px;}
+  .jmeta{font-family:var(--mono);font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-bottom:9px;}
+  .jmeta b{color:var(--brass);font-weight:700;}
+  .jcard h3{font-family:var(--display);font-weight:400;font-size:23px;line-height:1.12;margin-bottom:8px;color:var(--cream);}
+  .jcard p{color:var(--muted);font-size:14px;}
+  @media(max-width:860px){.jgrid{grid-template-columns:1fr;}}
+</style>
+<section id="journal">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="pill">The Journal</span><h2 style="margin-top:14px">Notes on film, memory &amp; shooting together.</h2><p>Stories on the looks, the wait, and the craft of capturing a night the way it actually felt.</p></div>
+    <div class="jgrid">
+      <a class="jcard reveal" href="blog/what-makes-a-photo-feel-like-film.html">
+        <div class="jart"><img loading="lazy" src="blog/art/what-makes-a-photo-feel-like-film.svg" alt="What Actually Makes a Photo Feel Like Film" /></div>
+        <div class="jbody"><div class="jmeta"><b>The Craft</b> · 8 min read</div><h3>What Actually Makes a Photo Feel Like Film</h3><p>A digital sensor records light perfectly. Film never did — and that imperfection is exactly what your eye reads as warmth.</p></div>
+      </a>
+      <a class="jcard reveal" href="blog/the-case-for-not-seeing-the-photo-right-away.html">
+        <div class="jart"><img loading="lazy" src="blog/art/the-case-for-not-seeing-the-photo-right-away.svg" alt="The Case for Not Seeing the Photo Right Away" /></div>
+        <div class="jbody"><div class="jmeta"><b>The Reveal</b> · 7 min read</div><h3>The Case for Not Seeing the Photo Right Away</h3><p>The screen on the back of the camera quietly changed how we live a night. Removing it gives the evening back.</p></div>
+      </a>
+      <a class="jcard reveal" href="blog/shared-camera-roll-at-a-wedding.html">
+        <div class="jart"><img loading="lazy" src="blog/art/shared-camera-roll-at-a-wedding.svg" alt="How to Run a Shared Camera Roll at a Wedding" /></div>
+        <div class="jbody"><div class="jmeta"><b>Hosting</b> · 9 min read</div><h3>How to Run a Shared Camera Roll at a Wedding</h3><p>The photographer gets the aisle. Your friends get everything else — and a shared film gathers it into one roll.</p></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:30px"><a class="btn ghost" href="blog/index.html">Read the Journal →</a></div>
+  </div>
+</section>
+
 <!-- CTA band -->
 <div class="wrap">
   <div class="band reveal">
@@ -332,6 +368,7 @@
   <div class="wrap">
     <div class="logo"><svg class="spark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 2 C53 30 70 47 98 50 C70 53 53 70 50 98 C47 70 30 53 2 50 C30 47 47 30 50 2 Z" fill="#E6B450"/></svg>Films</div>
     <div class="links">
+      <a href="blog/index.html">Journal</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
