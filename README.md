@@ -46,11 +46,11 @@ To add a post: append an entry to `posts.py`, drop a body fragment in `content/`
 ## ⚠️ Before you launch — required edits
 
 1. **Replace the support email.** Every page uses the placeholder
-   **`support@example.com`**. Swap it for a real inbox you check (a reviewer or user may email
+   **`support@getfilmsera.cam`**. Swap it for a real inbox you check (a reviewer or user may email
    it). One pass replaces them all:
    ```sh
    # from the repo root, on macOS:
-   LC_ALL=C grep -rl 'support@example.com' . | xargs sed -i '' 's/support@example.com/YOUR_REAL_EMAIL/g'
+   LC_ALL=C grep -rl 'support@getfilmsera.cam' . | xargs sed -i '' 's/support@getfilmsera.cam/YOUR_REAL_EMAIL/g'
    ```
 2. **Wire the waitlist (optional).** The "Notify me" form currently confirms client-side and
    stores nothing. To collect emails, set `WAITLIST_URL` in `index.html` to a real endpoint
